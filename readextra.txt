@@ -1,0 +1,7 @@
+1)
+JWT: Watch https://www.youtube.com/watch?v=soGRyl9ztjI
+Session + cookies vs JWT
+Session token: Reference token
+JWT Token: Value Token
+JWT is for authorization, not authentication.
+JWTs provide a means of maintaining session state on the client instead of doing it on the server.
