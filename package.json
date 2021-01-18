@@ -4,14 +4,19 @@
   "description": "Social media for coders",
   "main": "server.js",
   "scripts": {
+    "client-install": "npm install --prefix client",
     "start": "node server.js",
-    "server": "nodemon server.js"
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
   },
   "author": "Shrey",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "body-parser": "^1.19.0",
+    "concurrently": "^5.3.0",
     "express": "^4.17.1",
     "gravatar": "^1.8.1",
     "jsonwebtoken": "^8.5.1",

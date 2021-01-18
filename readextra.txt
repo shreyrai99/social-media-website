@@ -9,3 +9,8 @@ JWTs provide a means of maintaining session state on the client instead of doing
 2)
 Validator:
 Validates string. Read here: https://github.com/validatorjs/validator.js?source=post_page---------------------------
+
+3) Concurrently:
+Allows running different commands at once, our server and react app run at different ports so we used Concurrently
+
+4) Read componentWillReceiveProps
