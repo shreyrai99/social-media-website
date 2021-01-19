@@ -1,4 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
+import { loginUser } from '../../actions/authActions';
+import classnames from 'classnames';
 
 class Login extends Component {
     constructor(){
@@ -14,16 +18,29 @@ class Login extends Component {
             [e.target.name]:e.target.value
         })
     }
-    onSubmit = (e)=>{
+    onSubmit = async (e)=>{
         e.preventDefault();
-        const user = {
-            
+        const userData = {            
             email:this.state.email,
             password:this.state.password
         }
-        console.log(user);
+       this.props.loginUser(userData);
     }
+
+    componentWillReceiveProps(nextProps){
+        if(nextProps.auth.isAuthenticated){
+            this.props.history.push('/dashboard');
+        }
+        if(nextProps.errors){
+            this.setState({
+                errors: nextProps.errors
+            })
+        }
+    }
+
     render() { 
+        const { errors }=this.state;
+
         return ( 
             <section className="container">
                 
@@ -37,7 +54,9 @@ class Login extends Component {
                         name="email"
                         value={this.state.email}
                         onChange={this.onChange}
+                        className={classnames('form-control form-control-lg',{'is-invalid': errors.email})}
                     />
+                     {errors.email && (<div className="invalid-feedback">{errors.email}</div>)}
                     </div>
                     <div className="form-group">
                     <input
@@ -46,7 +65,9 @@ class Login extends Component {
                         name="password"
                         value={this.state.password}
                         onChange={this.onChange}
+                        className={classnames('form-control form-control-lg',{'is-invalid': errors.password})}
                     />
+                     {errors.password && (<div className="invalid-feedback">{errors.password}</div>)}
                     </div>
                     <input type="submit" className="btn btn-primary" value="Login" />
                 </form>
@@ -57,5 +78,15 @@ class Login extends Component {
          );
     }
 }
+
+Login.propTypes = {
+    loginUser: PropTypes.func.isRequired,
+    auth: PropTypes.object.isRequired,
+    errors: PropTypes.object.isRequired
+}
+const mapStateToProps = (state)=>({
+    auth: state.auth,
+    errors: state.errors
+})
  
-export default Login;
+export default connect(mapStateToProps, { loginUser })(Login);
