@@ -58,6 +58,51 @@ export const addExperience = (expData,history)=>async dispatch=>{
     }
 }
 
+// Add Education
+export const addEducation = (expData,history)=>async dispatch=>{
+    try{
+        const res = await axios.post('/api/profile/education',expData);
+        history.push('/dashboard');
+    }catch(err){
+        dispatch({
+            type:GET_ERRORS,
+            payload:err.response.data
+        })
+    }
+}
+
+// Delete Experience
+export const deleteExperience = (id)=>async dispatch=>{
+    try{
+        const res = await axios.delete(`/api/profile/experience/${id}`);
+        dispatch({
+            type:GET_PROFILE,
+            payload:res.data
+        })
+    }catch(err){
+        dispatch({
+            type:GET_ERRORS,
+            payload:err.response.data
+        })
+    }
+}
+
+// Delete Education
+export const deleteEducation = (id)=>async dispatch=>{
+    try{
+        const res = await axios.delete(`/api/profile/education/${id}`);
+        dispatch({
+            type:GET_PROFILE,
+            payload:res.data
+        })
+    }catch(err){
+        dispatch({
+            type:GET_ERRORS,
+            payload:err.response.data
+        })
+    }
+}
+
 //delete profile
 export const deleteAccount = ()=>async dispatch=>{
     if(window.confirm('Are you sure? This can NOT be undone!')){
