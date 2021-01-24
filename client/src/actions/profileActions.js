@@ -31,3 +31,16 @@ export const clearCurrentProfile = ()=>{
         type: CLEAR_CURRENT_PROFILE
     }
 }
+
+// Create or update profile
+export const createProfile = (profileData,history)=> async dispatch=>{
+    try{
+        const res = await axios.post('/api/profile', profileData);
+        history.push('/dashboard');   
+    }catch(err){
+        dispatch({
+            type:GET_ERRORS,
+            payload:err.response.data
+        })
+    }
+} 
