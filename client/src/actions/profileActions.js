@@ -1,5 +1,6 @@
 import axios from 'axios';
-import { GET_PROFILE, PROFILE_LOADING, GET_ERRORS, CLEAR_CURRENT_PROFILE,SET_CURRENT_USER, GET_PROFILES } from './types';
+import { GET_PROFILE, PROFILE_LOADING, GET_ERRORS, CLEAR_CURRENT_PROFILE,
+    SET_CURRENT_USER, PROFILE_ERROR, GET_PROFILES } from './types';
 
 //get current profile
 export const getCurrentProfile = ()=> async dispatch => {
@@ -20,7 +21,8 @@ export const getCurrentProfile = ()=> async dispatch => {
 
 //GET all Profiles
 export const getProfiles = ()=>async dispatch=>{
-    try{
+    
+    try{       
         dispatch(setProfileLoading());
         const res = await axios.get('/api/profile/all')
         dispatch({
@@ -34,6 +36,24 @@ export const getProfiles = ()=>async dispatch=>{
         })
     }
 }
+
+/*export const getProfiles = () => async (dispatch) => {
+   
+  
+    try {
+      const res = await axios.get('/api/profile/all');
+  
+      dispatch({
+        type: GET_PROFILES,
+        payload: res.data
+      });
+    } catch (err) {
+      dispatch({
+        type: PROFILE_ERROR,
+        payload: { msg: err.response.statusText, status: err.response.status }
+      });
+    }
+};*/
 
 //profile loading
 export const setProfileLoading = ()=>{
