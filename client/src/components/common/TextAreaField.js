@@ -10,7 +10,7 @@ const TextAreaField=({
     onChange    
 })=>{
     return(
-        <div className="form-group">
+        <div className="form-group mb-3">
             <textarea              
                 placeholder={placeholder}
                 name={name}

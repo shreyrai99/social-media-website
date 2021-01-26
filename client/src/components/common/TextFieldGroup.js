@@ -13,7 +13,7 @@ const TextFieldGroup=({
     disabled
 })=>{
     return(
-        <div className="form-group">
+        <div className="form-group mb-5">
             <input
                 type={type}
                 placeholder={placeholder}

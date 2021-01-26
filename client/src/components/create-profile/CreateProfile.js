@@ -176,7 +176,7 @@ class CreateProfile extends Component {
                                 value={this.state.website}
                                 onChange={this.onChange}
                                 error={errors.website}
-                                info="Website"
+                                info="Website, for example: https://www.google.com/"
                                 />
 
 
