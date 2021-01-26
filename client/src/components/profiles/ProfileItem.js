@@ -12,16 +12,19 @@ class ProfileItem extends Component {
           let avatarDisplay;
           let userID;
           let email;
+          let handle;
           if(profile.user===null){
               nameDisplay='';
               avatarDisplay='';
               userID='';
               email='';
+              handle='';
           }else{
               nameDisplay=profile.user.name
               avatarDisplay=profile.user.avatar
               userID=profile.user._id
               email=profile.user.email
+              handle=profile.handle
           }
 
          
@@ -61,7 +64,7 @@ class ProfileItem extends Component {
                     <p>
                      {email && <span><small>Email:</small> {email}</span>}
                     </p>
-                      <Link to={`/profile/${userID}`} className="btn btn-primary">
+                      <Link to={`/profile/${handle}`} className="btn btn-primary">
                             View Profile
                         </Link> 
                     </div>
