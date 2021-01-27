@@ -20,6 +20,9 @@ class Navbar extends Component {
                 <Link to="/profiles">Developers</Link>
               </li>
               <li>
+                <Link to="/feed">Post Feed</Link>
+              </li>
+              <li>
                 <Link to="/posts">Posts</Link>
               </li>
               <li>
