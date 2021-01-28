@@ -4,10 +4,23 @@ import { connect } from 'react-redux';
 import classnames from 'classnames';
 import formatDate from '../../utils/formatDate';
 import { Link } from 'react-router-dom';
+import { deletePost, addLike, removeLike } from '../../actions/postActions';
 
 class PostItem extends Component {
     onDeleteClick=(id)=>{      
-      console.log(`Delete button clicked! ID: ${id}`)
+      this.props.deletePost(id);
+    }
+    onLikeClick=(id)=>{
+      this.props.addLike(id);
+    }
+    onUnLikeClick=(id)=>{
+      this.props.removeLike(id);
+    }
+    findUserLike(likes){
+      const { auth }=this.props;
+      if(likes.filter(like=> like.user === auth.user.id).length>0)
+       return true;
+       return false;
     }
     render() { 
         const { post, auth }=this.props;
@@ -31,11 +44,13 @@ class PostItem extends Component {
                  <p className="post-date">
                     Posted on {formatDate(post.date)}
                 </p>
-                <button type="button" className="btn btn-light">
-                  <i className="fas fa-thumbs-up"></i>
-                  <span>{post.likes.length}</span>
+                <button type="button" className="btn btn-light" onClick={()=>this.onLikeClick(post._id)}>
+                <i className={classnames("fas fa-thumbs-up",{
+                  'text-info':this.findUserLike(post.likes)
+                })}></i>   
+                <span>{post.likes.length}</span>
                 </button>
-                <button type="button" className="btn btn-light">
+                <button type="button" className="btn btn-light" onClick={()=>this.onUnLikeClick(post._id)}>
                   <i className="fas fa-thumbs-down"></i>
                 </button>
                 <Link to={`post/${post._id}`} className="btn btn-primary">
@@ -61,11 +76,14 @@ class PostItem extends Component {
 PostItem.propTypes={
     post:PropTypes.object.isRequired,
     auth: PropTypes.object.isRequired,
+    deletePost: PropTypes.func.isRequired,
+    addLike: PropTypes.func.isRequired,
+    removeLike: PropTypes.func.isRequired,
 }
 const mapStateToProps=state=>({
     auth:state.auth, //current user can delete his post
 })
-export default connect(mapStateToProps)(PostItem);
+export default connect(mapStateToProps, { deletePost, addLike, removeLike })(PostItem);
 
 
 //onClick={this.onDeleteClick.bind(this, post._id)}
