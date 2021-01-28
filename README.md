@@ -49,5 +49,4 @@ Website is live [here](https://sleepy-shelf-50435.herokuapp.com/).
 |<img src="snapshots/feed.png" width="400"/>|<img src="snapshots/comment_reply.png" width="400"/>|
 
 <br/><br/>
-## DevMedia: Now Experience Linkedin + Stackoverflow at a single website!
-Dev Media provides a platform to techno savvy folks to interact with each other and create their portfolio profiles.
+## DevMedia: Connecting Coders ;)
