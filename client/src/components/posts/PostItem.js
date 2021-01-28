@@ -23,19 +23,19 @@ class PostItem extends Component {
        return false;
     }
     render() { 
-        const { post, auth }=this.props;
+        const { post, auth, showActions }=this.props;
         return ( 
             <div className="posts mb-3">
             <div className="post bg-white p-1 my-1">
               <div>
-                <a href="profile.html">
+                <Link to="#">
                   <img
                     className="round-img"
                     src={post.avatar}
                     alt=""
                   />
                   <h4>{post.name}</h4>
-                </a>
+                </ Link>
               </div>
               <div>
                 <p className="my-1">
@@ -44,7 +44,11 @@ class PostItem extends Component {
                  <p className="post-date">
                     Posted on {formatDate(post.date)}
                 </p>
-                <button type="button" className="btn btn-light" onClick={()=>this.onLikeClick(post._id)}>
+
+                
+                {showActions?
+                (<span>
+                  <button type="button" className="btn btn-light" onClick={()=>this.onLikeClick(post._id)}>
                 <i className={classnames("fas fa-thumbs-up",{
                   'text-info':this.findUserLike(post.likes)
                 })}></i>   
@@ -66,6 +70,10 @@ class PostItem extends Component {
                 <i className="fas fa-times"></i>
               </button>
               ):null}
+
+                </span>):null}
+
+               
               </div>
             </div>
             </div>
@@ -73,6 +81,9 @@ class PostItem extends Component {
     }
 }
  
+PostItem.defaultProps={
+  showActions:true
+}
 PostItem.propTypes={
     post:PropTypes.object.isRequired,
     auth: PropTypes.object.isRequired,

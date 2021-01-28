@@ -21,10 +21,7 @@ class Navbar extends Component {
               </li>
               <li>
                 <Link to="/feed">Post Feed</Link>
-              </li>
-              <li>
-                <Link to="/posts">Posts</Link>
-              </li>
+              </li>              
               <li>
                 <Link to="/dashboard">
                   <i className="fas fa-user" />{' '}
@@ -57,7 +54,7 @@ class Navbar extends Component {
             <nav className="navbar bg-dark">
               <h1>
                 <Link to="/">
-                  <i className="fas fa-code" /> DevConnector
+                  <i className="fas fa-code" /> DevMedia
                 </Link>
               </h1>
               <Fragment>{isAuthenticated ? authLinks : guestLinks}</Fragment>

@@ -4,3 +4,4 @@ client/.eslintcache
 config/production.json
 config/default.json
 client/build
+/config/keys_dev.js

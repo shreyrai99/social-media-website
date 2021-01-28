@@ -5,6 +5,7 @@ import classnames from 'classnames'; // allows to toggle classes (like error che
 import { connect } from 'react-redux';
 import { registerUser } from '../../actions/authActions';
 import { withRouter } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 class Register extends Component {
     constructor(){
@@ -112,7 +113,7 @@ class Register extends Component {
                     <input type="submit" className="btn btn-primary" value="Register" />
                 </form>
                 <p className="my-1">
-                    Already have an account? <a href="login.html">Sign In</a>
+                    Already have an account? <Link to="/login">Sign In</Link>
                 </p>
             </section>
          );
