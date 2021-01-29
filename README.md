@@ -1,7 +1,9 @@
 # Social Media Website
-A website for developers built using MERN stack. Now experience LinkedIn + Stackoverflow at a single place!
+A website for developers built using the MERN stack. Now experience LinkedIn + Stackoverflow at a single place! 
 
-Website is live [here](https://sleepy-shelf-50435.herokuapp.com/).
+Create your portfolio profile, add details like your educational credentials and experience, create posts, like/unlike and comment on posts by other members of the community.
+
+## Website is live [here](https://sleepy-shelf-50435.herokuapp.com/).
 <br /><br />
 <img src="snapshots/landing_page.png">
 </img>   
@@ -17,7 +19,7 @@ Website is live [here](https://sleepy-shelf-50435.herokuapp.com/).
 * CSS  <a href=""><img height="30" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"></a>
 * HTML5  <a href=""><img height="30" src="https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"></a>
 
-## Working model and Database
+## Redux State Management
 
 <img src="snapshots/redux_state.png">
 </img> 
