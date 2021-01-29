@@ -17,6 +17,10 @@ Website is live [here](https://sleepy-shelf-50435.herokuapp.com/).
 * CSS  <a href=""><img height="30" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"></a>
 * HTML5  <a href=""><img height="30" src="https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"></a>
 
+## Working model and Database
+
+<img src="snapshots/redux_state.png">
+</img> 
 
 
 ## :camera_flash: ScreenShots   
