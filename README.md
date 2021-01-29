@@ -40,7 +40,7 @@ Create your portfolio profile, add details like your educational credentials and
 
 | Dashboard (User Education info) | List of Developer Profiles |
 |------|-------|
-|<img src="snapshots/dashboard_1.png" width="400"/>|<img src="snapshots/developer_profiles.png" width="400"/>|
+|<img src="snapshots/dashboard_2.png" width="400"/>|<img src="snapshots/developer_profiles.png" width="400"/>|
 
 
 
