@@ -9,7 +9,7 @@ Create your portfolio profile, add details like your educational credentials and
 </img>   
 
 <br/><br/>
-## Technologies Used
+## 🚀Technology Stack
 
 * JavaScript  <a href=""><img height="30" src="https://pluspng.com/img-png/logo-javascript-png-file-javascript-logo-png-1052.png"></a>
 * React  <code><img height="30" src="https://www.vectorlogo.zone/logos/reactjs/reactjs-icon.svg"></code>
@@ -55,4 +55,31 @@ Create your portfolio profile, add details like your educational credentials and
 |<img src="snapshots/feed.png" width="400"/>|<img src="snapshots/comment_reply.png" width="400"/>|
 
 <br/><br/>
+## Run Locally
+#### Clone the repository: 
+```bash
+git@github.com:shreyrai99/social-media-website.git
+```
+#### Install Server dependencies: 
+```bash
+npm install
+```
+#### Install Client Dependencies:
+```bash
+cd client
+npm install
+```
+#### Run Express and React
+```bash
+cd ..
+npm run dev
+```
+#### Check in Browser
+```bash
+ http://localhost:5000/ : The Backend runs at port 5000
+ http://localhost:3000/ : The Front-end runs at port 3000
+```
+
+
+
 ## DevMedia: Connecting Coders ;)
