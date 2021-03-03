@@ -3,7 +3,7 @@ A website for developers built using the MERN stack. Now experience LinkedIn + S
 
 Create your portfolio profile, add details like your educational credentials and experience, create posts, like/unlike and comment on posts by other members of the community.
 
-## Website is live [here](https://sleepy-shelf-50435.herokuapp.com/).
+## Website is live [here](https://shreybook.herokuapp.com/).
 <br /><br />
 <img src="snapshots/landing_page.png">
 </img>   
