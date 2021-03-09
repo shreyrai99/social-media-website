@@ -19,7 +19,7 @@ Create your portfolio profile, add details like your educational credentials and
 * CSS  <a href=""><img height="30" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"></a>
 * HTML5  <a href=""><img height="30" src="https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"></a>
 
-## Redux State Management
+## State Management
 
 <img src="snapshots/redux_state.png">
 </img> 
