@@ -1,7 +1,7 @@
 # Social Media Website
 A website for developers built using the MERN stack. Now experience LinkedIn + Stackoverflow at a single place! 
 
-Create your portfolio profile, add details like your educational credentials and experience, create posts, like/unlike and comment on posts by other members of the community.
+Create your portfolio profile, add details like your educational credentials and experience, create posts, like/unlike and comment on posts by other members of the community. Users can also give mock quiz on the website to brush up their knowledge.
 
 ## Website is live [here](https://shreybook.herokuapp.com/).
 <br /><br />
@@ -18,6 +18,15 @@ Create your portfolio profile, add details like your educational credentials and
 * Node JS  <a href=""><img height="30" src="https://www.vectorlogo.zone/logos/nodejs/nodejs-horizontal.svg"></a>
 * CSS  <a href=""><img height="30" src="https://www.vectorlogo.zone/logos/netlifyapp_watercss/netlifyapp_watercss-ar21.svg"></a>
 * HTML5  <a href=""><img height="30" src="https://cdn.iconscout.com/icon/free/png-512/html5-10-569380.png"></a>
+
+
+## Specialities of the Website
+* Safe and secure authorization and authentication.
+* Users can create their own portfolio profile.
+* Create posts and view posts by other members of the community.
+* Like and comment on posts created by others.
+* Give mock quiz to brush up your knowledge.
+<br/>
 
 ## State Management
 
@@ -97,4 +106,5 @@ npm run dev
 
 
 
-## DevMedia: Connecting Coders ;)
+## DevMedia: Connecting Coders 
+Visit the Website [here](https://shreybook.herokuapp.com/).
