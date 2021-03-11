@@ -54,6 +54,21 @@ Create your portfolio profile, add details like your educational credentials and
 |------|-------|
 |<img src="snapshots/feed.png" width="400"/>|<img src="snapshots/comment_reply.png" width="400"/>|
 
+
+
+| Give Mock Quiz | Practise MCQ Questions |
+|------|-------|
+|<img src="snapshots/quiz1.png" width="400"/>|<img src="snapshots/quiz2.png" width="400"/>|
+
+
+
+
+
+
+| Get Quiz Marks | State of Website |
+|------|-------|
+|<img src="snapshots/quiz3.png" width="400"/>|<img src="snapshots/redux_state.png" width="400"/>|
+
 <br/><br/>
 ## Run Locally
 #### Clone the repository: 
