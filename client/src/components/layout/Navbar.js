@@ -21,9 +21,12 @@ class Navbar extends Component {
               </li>
               <li>
                 <Link to="/feed">Post Feed</Link>
+<<<<<<< HEAD
               </li>
               <li>
                 <Link to="/quiz">Mock Quiz</Link>
+=======
+>>>>>>> caae2ad4eb737bf6140ae6dfab7076257ce53d0e
               </li>              
               <li>
                 <Link to="/dashboard">
