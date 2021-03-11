@@ -6,4 +6,5 @@ config/default.json
 client/build
 /config/keys_dev.js
 _resources
+/config/keys.js
 
