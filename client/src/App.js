@@ -27,6 +27,8 @@ import Profile from './components/profile/Profile';
 import NotFound from './components/not-found/NotFound';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
+import Quiz from './components/quiz/Quiz';
+
 
 // check for token
 if(localStorage.jwtToken){
@@ -67,6 +69,9 @@ class App extends Component {
             </Switch>
             <Switch>
               <PrivateRoute exact path="/create-profile" component= { CreateProfile } />
+            </Switch>
+            <Switch>
+              <PrivateRoute exact path="/quiz" component= { Quiz } />
             </Switch>
 
             <Switch>
