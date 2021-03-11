@@ -21,6 +21,9 @@ class Navbar extends Component {
               </li>
               <li>
                 <Link to="/feed">Post Feed</Link>
+              </li>
+              <li>
+                <Link to="/quiz">Mock Quiz</Link>
               </li>              
               <li>
                 <Link to="/dashboard">
