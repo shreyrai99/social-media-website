@@ -5,7 +5,4 @@ config/production.json
 config/default.json
 client/build
 /config/keys_dev.js
-<<<<<<< HEAD
 _resources
-=======
->>>>>>> caae2ad4eb737bf6140ae6dfab7076257ce53d0e

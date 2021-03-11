@@ -27,11 +27,8 @@ import Profile from './components/profile/Profile';
 import NotFound from './components/not-found/NotFound';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
-<<<<<<< HEAD
 import Quiz from './components/quiz/Quiz';
 
-=======
->>>>>>> caae2ad4eb737bf6140ae6dfab7076257ce53d0e
 
 // check for token
 if(localStorage.jwtToken){
@@ -73,12 +70,9 @@ class App extends Component {
             <Switch>
               <PrivateRoute exact path="/create-profile" component= { CreateProfile } />
             </Switch>
-<<<<<<< HEAD
             <Switch>
               <PrivateRoute exact path="/quiz" component= { Quiz } />
             </Switch>
-=======
->>>>>>> caae2ad4eb737bf6140ae6dfab7076257ce53d0e
 
             <Switch>
               <PrivateRoute exact path="/feed" component= { Posts } />
