@@ -1,7 +1,7 @@
 # Social Media Website
 A website for developers built using the MERN stack. Now experience LinkedIn + Stackoverflow at a single place! 
 
-Create your portfolio profile, add details like your educational credentials and experience, create posts, like/unlike and comment on posts by other members of the community. Users can also give mock quiz on the website to brush up their knowledge.
+Create your portfolio profile, add details like your educational credentials and experience, create posts, like/unlike and comment on posts by other members of the community. Users can also give mock quiz on the website to brush up their knowledge. The "Covid Relief" section of the website provides real time tweets related to COVID-19 relief, medicines, oxgyen cylinders etc. 
 
 ## Website is live [here](https://shreybook.herokuapp.com/).
 <br /><br />
@@ -26,6 +26,7 @@ Create your portfolio profile, add details like your educational credentials and
 * Create posts and view posts by other members of the community.
 * Like and comment on posts created by others.
 * Give mock quiz to brush up your knowledge.
+* Get Real time tweets related to Corona virus pandemic.
 <br/>
 
 ## State Management
@@ -73,10 +74,18 @@ Create your portfolio profile, add details like your educational credentials and
 
 
 
-
 | Get Quiz Marks | State of Website |
 |------|-------|
 |<img src="snapshots/quiz3.png" width="400"/>|<img src="snapshots/redux_state.png" width="400"/>|
+
+
+
+
+
+
+| Real time Tweet Streamer | Get Covid Information |
+|------|-------|
+|<img src="snapshots/tweet_1.png" width="400"/>|<img src="snapshots/tweet_2.png" width="400"/>|
 
 <br/><br/>
 ## Run Locally
